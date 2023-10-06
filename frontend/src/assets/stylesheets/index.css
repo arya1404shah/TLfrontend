@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    margin: 0;
+}
+
+#svg_main_logo path {
+    stroke-dashoffset: 300;
+    stroke-dasharray: 300;
+    animation: draw 3.5s forwards;
+}
+#svg_main_logo g {
+    fill: white;
+    fill-opacity: 0;
+    animation: fillIn 1s 2.5s forwards;
+}
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fillIn {
+    to {
+        fill-opacity: 1;
+    }
+}
